@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Model Selection</title>
+    <!-- CSS 可以在这里添加 -->
+</head>
+<body>
+    <h2>Model Selection for Cell Segmentation</h2>
+
+    <!-- 通道选择 -->
+    <div id="channel-selection">
+        <h3>Select Channel</h3>
+        <input type="radio" id="single_channel" name="channel" value="single" onchange="showMethods()">
+        <label for="single_channel">Single Channel</label>
+        <input type="radio" id="dual_channel" name="channel" value="dual" onchange="showMethods()">
+        <label for="dual_channel">Dual Channel</label>
+    </div>
+
+    <!-- 方法选择 -->
+    <div id="method-selection" style="display:none;">
+        <h3>Select Method</h3>
+        <!-- 在这里添加 18 种方法的单选按钮 -->
+        <input type="radio" id="method1" name="method" value="Method1" onchange="showDownloadLink()">
+        <label for="method1">Method 1</label>
+        <!-- 更多方法... -->
+    </div>
+
+    <!-- 下载链接和示例结果 -->
+    <div id="download-section" style="display:none;">
+        <h3>Download and Example Results</h3>
+        <a id="download-link" href="#">Download Model</a>
+        <p>Example results for selected method...</p>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function showMethods() {
+            document.getElementById("method-selection").style.display = "block";
+        }
+
+        function showDownloadLink() {
+            // 更新下载链接和示例结果
+            document.getElementById("download-section").style.display = "block";
+            // 根据选择的方法更新下载链接
+        }
+    </script>
+</body>
+</html>
