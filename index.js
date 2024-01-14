@@ -41,3 +41,12 @@ window.addEventListener("scroll", () => {
     alterStyles(isBackToTopRendered);
   }
 });
+
+
+document.querySelectorAll('.carousel-method-segment').forEach(segment => {
+  segment.addEventListener('click', function() {
+      const methodNumber = this.textContent.split(' ')[1]; // Assuming format "Method 1"
+      const imagePath = `./images/method${methodNumber}-image.png`;
+      document.getElementById('selected-image').src = imagePath;
+  });
+});

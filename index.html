@@ -24,12 +24,12 @@
 
   <!-- Put your site title here -->
   <title>
-    Shelley Benhoff | Sitecore MVP & Docker Community Leader based in Orlando, Florida.
+    A Systematic Evaluation of Computation Methods for Cell Segmentation
   </title>
 
-  <meta name="description" content="I have over 20 years of experience as a developer and leader in the tech industry.">
+  <meta name="description">
   <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Shelley Benhoff, Docker, Sitecore, Web Development, .NET, C#" />
+  <meta name="keywords" />
   <link rel="stylesheet" href="index.css" />
 </head>
 
@@ -41,13 +41,11 @@
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
+          <!-- <li class="nav__item"><a href="#work" class="nav__link">Work</a></li> -->
+          <li class="nav__item"><a href="#trained on all types" class="nav__link">Trained on All Types</a></li>
+          <li class="nav__item"><a href="#trained on single type" class="nav__link">Trained on Single Type</a>
           </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a>
           </li>
         </ul>
       </nav>
@@ -56,10 +54,13 @@
       <div class="header__text">
         <h1 class="heading-primary">
           <!-- Replace the following name with your name -->
-          <span>Shelley Benhoff</span>
+          <!-- <span>Shelley Benhoff</span> -->
+          <div class="center-container">
+            <img src="./images/workflow.png" alt="workflow of cell segmentation" class="header-image">
+          </div>
         </h1>
         <!-- Put a small paragraph about yourself -->
-        <p>Sitecore MVP & Docker Community Leader based in Orlando, Florida.</p>
+        <p> The benchmarking overview for cell segmentation is conducted on two datasets, TissueNet and LIVECell, with two training strategies. TissueNet employs two input configurations due to nuclear and whole-cell available while LIVECell only involves one input configuration due to only nuclear provided.</p>
         <a href="#contact" class="btn btn--pink">Get in touch</a>
       </div>
     </div>
@@ -69,59 +70,89 @@
 
     <!-- ***** Work ***** -->
 
-    <section class="work" id="work">
+    <section class="trained on all types" id="trained on all types">
       <div class="row">
-        <h2>My Work</h2>
+        <h2>Trained on All Types</h2>
         <div class="work__boxes">
 
           <!-- Each div with the work__box class is a project. -->
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Portfolio Template</h3>
+              <h3>TissueNet</h3>
               <p>
-                A free Open Source Portfolio for anyone to use for free.
+                Data: dual-channel, Label: nucleus
               </p>
-              <ul class="work__list">
+              <!-- <ul class="work__list">
                 <li>HTML</li>
                 <li>SCSS</li>
                 <li>JavaScript</li>
                 <li>Parcel</li>
-              </ul>
+              </ul> -->
 
               <div class="work__links">
-                <a href="https://hoffstech.com" target="_blank" class="link__text">
+                <a href="https://github.com/BoomStarcuc/Cell-Segmentation-Benchmark" target="_blank" class="link__text">
                   Visit Site <span>&rarr;</span>
                 </a>
-                <a href="https://github.com/sbenhoff/portfolio" title="View Source Code" target="_blank">
+                <a href="https://github.com/BoomStarcuc/Cell-Segmentation-Benchmark" title="View Source Code" target="_blank">
                   <img src="./images/github.svg" class="work__code" alt="GitHub">
                 </a>
               </div>
             </div>
+
             <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
+              <!-- <div class="carousel-container"> -->
+                <!-- Sliding Bar -->
+                <div class="carousel-bar">
+                    <!-- Each segment represents a method; add labels for all 18 methods -->
+                    <label for="method1" class="carousel-method-segment">Method 1</label>
+                    <label for="method2" class="carousel-method-segment">Method 2</label>
+                    <label for="method3" class="carousel-method-segment">Method 3</label>
+                    <label for="method4" class="carousel-method-segment">Method 4</label>
+                    <label for="method5" class="carousel-method-segment">Method 5</label>
+                    <label for="method6" class="carousel-method-segment">Method 6</label>
+                    <label for="method7" class="carousel-method-segment">Method 7</label>
+                    <label for="method8" class="carousel-method-segment">Method 8</label>
+                    <label for="method9" class="carousel-method-segment">Method 9</label>
+                    <label for="method10" class="carousel-method-segment">Method 10</label>
+                    <label for="method11" class="carousel-method-segment">Method 11</label>
+                    <label for="method12" class="carousel-method-segment">Method 12</label>
+                    <label for="method13" class="carousel-method-segment">Method 13</label>
+                    <label for="method14" class="carousel-method-segment">Method 14</label>
+                    <label for="method15" class="carousel-method-segment">Method 15</label>
+                    <label for="method16" class="carousel-method-segment">Method 16</label>
+                    <label for="method17" class="carousel-method-segment">Method 17</label>
+                    <label for="method18" class="carousel-method-segment">Method 18</label>
+                    <!-- Add more labels for Method 2 to Method 18 -->
+                </div>
+            
+                <!-- Images Section -->
+                <div class="carousel-images">
+                    <!-- Each image corresponds to a method; set the default image -->
+                    <img src="./images/method1-image.png" id="selected-image" alt="Selected Method Image">
+                </div>
+            </div>
             </div>
           </div>
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Calculator</h3>
+              <h3>TissueNet</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
+                Data: nucleus, Label: nucleus
               </p>
-              <ul class="work__list">
+              <!-- <ul class="work__list">
                 <li>React</li>
                 <li>Next.js</li>
                 <li>Node</li>
                 <li>MongoDB</li>
-              </ul>
+              </ul> -->
 
               <div class="work__links">
-                <a href="#" class="link__text">
+                <a href="https://github.com/BoomStarcuc/Cell-Segmentation-Benchmark" class="link__text">
                   Visit Site <span>&rarr;</span>
                 </a>
-                <a href="#">
+                <a href="https://github.com/BoomStarcuc/Cell-Segmentation-Benchmark">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                 </a>
               </div>
@@ -133,23 +164,76 @@
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Notificator</h3>
+              <h3>TissueNet</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
+                Data: dual-channel, Label: whole-cell
               </p>
-              <ul class="work__list">
+              <!-- <ul class="work__list">
                 <li>React</li>
                 <li>Next.js</li>
                 <li>Node</li>
                 <li>MongoDB</li>
-              </ul>
+              </ul> -->
 
               <div class="work__links">
-                <a href="#" class="link__text">
+                <a href="https://github.com/BoomStarcuc/Cell-Segmentation-Benchmark" class="link__text">
                   Visit Site <span>&rarr;</span>
                 </a>
-                <a href="#">
+                <a href="https://github.com/BoomStarcuc/Cell-Segmentation-Benchmark">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>TissueNet</h3>
+              <p>
+                Data: whole-cell, Label: whole-cell
+              </p>
+              <!-- <ul class="work__list">
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Node</li>
+                <li>MongoDB</li>
+              </ul> -->
+
+              <div class="work__links">
+                <a href="https://github.com/BoomStarcuc/Cell-Segmentation-Benchmark" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/BoomStarcuc/Cell-Segmentation-Benchmark">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>LIVECell</h3>
+              <p>
+                Data: nucleus, Label: nucleus
+              </p>
+              <!-- <ul class="work__list">
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Node</li>
+                <li>MongoDB</li>
+              </ul> -->
+
+              <div class="work__links">
+                <a href="https://github.com/BoomStarcuc/Cell-Segmentation-Benchmark" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/BoomStarcuc/Cell-Segmentation-Benchmark">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                 </a>
               </div>
