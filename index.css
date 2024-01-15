@@ -3,18 +3,17 @@
 /* --------------------------------------- */
 
 .center-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60vh; /* 或根据需要调整高度 */
-    width: 65vw; /* 宽度占满整个视口宽度 */
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    height: 100%; /* Set to the desired height, e.g., full height of the parent */
+    width: 100%; /* Set to the desired width, e.g., full width of the parent */
 }
 
-.header-image {
-    width: 100%;
+/* .center-container img {
+    max-width: 100%;
     height: auto;
-    max-width: 600px;
-}
+} */
 
 @font-face {
     font-family: 'Hk Grotesk';
@@ -656,8 +655,19 @@ body:not(.user-is-tabbing) a:focus {
     border-right: 1px solid var(--pink);
 }
 
-.carousel-images img {
-    width: 100%;
+.carousel-images {
+    position: relative; /* Ensures the download icon is positioned relative to the image */
+}
+
+.download-icon {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    z-index: 10; /* Ensures the icon is above the image */
+}
+
+.download-icon img {
+    width: 60px; /* Adjust the size as needed */
     height: auto;
 }
 

@@ -52,13 +52,14 @@
     </div>
     <div class="header__text-box row">
       <div class="header__text">
-        <h1 class="heading-primary">
+        <!-- <h1 class="heading-primary"> -->
           <!-- Replace the following name with your name -->
           <!-- <span>Shelley Benhoff</span> -->
           <div class="center-container">
-            <img src="./images/workflow.png" alt="workflow of cell segmentation" class="header-image">
+            <img src="./images/workflow - Copy.png" alt="workflow of cell segmentation">
           </div>
-        </h1>
+          <!-- <img src="./images/workflow.png" alt="workflow of cell segmentation" class="header-image"> -->
+        <!-- </h1> -->
         <!-- Put a small paragraph about yourself -->
         <p> The benchmarking overview for cell segmentation is conducted on two datasets, TissueNet and LIVECell, with two training strategies. TissueNet employs two input configurations due to nuclear and whole-cell available while LIVECell only involves one input configuration due to only nuclear provided.</p>
         <a href="#contact" class="btn btn--pink">Get in touch</a>
@@ -105,33 +106,34 @@
                 <!-- Sliding Bar -->
                 <div class="carousel-bar">
                     <!-- Each segment represents a method; add labels for all 18 methods -->
-                    <label for="method1" class="carousel-method-segment">Method 1</label>
-                    <label for="method2" class="carousel-method-segment">Method 2</label>
-                    <label for="method3" class="carousel-method-segment">Method 3</label>
-                    <label for="method4" class="carousel-method-segment">Method 4</label>
-                    <label for="method5" class="carousel-method-segment">Method 5</label>
-                    <label for="method6" class="carousel-method-segment">Method 6</label>
-                    <label for="method7" class="carousel-method-segment">Method 7</label>
-                    <label for="method8" class="carousel-method-segment">Method 8</label>
-                    <label for="method9" class="carousel-method-segment">Method 9</label>
-                    <label for="method10" class="carousel-method-segment">Method 10</label>
-                    <label for="method11" class="carousel-method-segment">Method 11</label>
-                    <label for="method12" class="carousel-method-segment">Method 12</label>
-                    <label for="method13" class="carousel-method-segment">Method 13</label>
-                    <label for="method14" class="carousel-method-segment">Method 14</label>
-                    <label for="method15" class="carousel-method-segment">Method 15</label>
-                    <label for="method16" class="carousel-method-segment">Method 16</label>
-                    <label for="method17" class="carousel-method-segment">Method 17</label>
-                    <label for="method18" class="carousel-method-segment">Method 18</label>
+                    <label for="Swin-S-tdn" class="carousel-method-segment">Swin-S</label>
+                    <label for="Swin-T-tdn" class="carousel-method-segment">Swin-T</label>
+                    <label for="Cellpose-tdn" class="carousel-method-segment">Cellpose</label>
+                    <label for="Cascade Mask RCNN seesaw-tdn" class="carousel-method-segment">Cascade Mask RCNN seesaw</label>
+                    <label for="Centermask2-tdn" class="carousel-method-segment">Centermask2</label>
+                    <label for="SOLOv2-tdn" class="carousel-method-segment">SOLOv2</label>
+                    <label for="ResNeSt-tdn" class="carousel-method-segment">ResNeSt</label>
+                    <label for="Res2Net-tdn" class="carousel-method-segment">Res2Net</label>
+                    <label for="RF-Next-tdn" class="carousel-method-segment">RF-Next</label>
+                    <label for="StarDist-tdn" class="carousel-method-segment">StarDist</label>
+                    <label for="HRNet-tdn" class="carousel-method-segment">HRNet</label>
+                    <label for="Mask2former-tdn" class="carousel-method-segment">Mask2former</label>
+                    <label for="Mask RCNN-tdn" class="carousel-method-segment">Mask RCNN</label>
+                    <label for="Segment Anything-tdn" class="carousel-method-segment">Segment Anything</label>
+                    <label for="RetinaMask-tdn" class="carousel-method-segment">RetinaMask</label>
+                    <label for="Mesmer-tdn" class="carousel-method-segment">Mesmer</label>
+                    <label for="MS RCNN-tdn" class="carousel-method-segment">MS RCNN</label>
+                    <label for="FeatureNet-tdn" class="carousel-method-segment">FeatureNet</label>
                     <!-- Add more labels for Method 2 to Method 18 -->
                 </div>
             
-                <!-- Images Section -->
                 <div class="carousel-images">
-                    <!-- Each image corresponds to a method; set the default image -->
-                    <img src="./images/method1-image.png" id="selected-image" alt="Selected Method Image">
+                  <img src="./images/swin-s-tdn-image.png" id="selected-image-tdn" alt="Selected Method Image">
+                  <!-- <div style="text-align: center; font-size: smaller;">Download</div> -->
+                  <a href="#" id="download-link-tdn" class="download-icon" download>
+                      <img src="./images/download-icon.png" class="work__code" alt="Download">
+                  </a>
                 </div>
-            </div>
             </div>
           </div>
 
@@ -141,12 +143,6 @@
               <p>
                 Data: nucleus, Label: nucleus
               </p>
-              <!-- <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul> -->
 
               <div class="work__links">
                 <a href="https://github.com/BoomStarcuc/Cell-Segmentation-Benchmark" class="link__text">
@@ -157,8 +153,40 @@
                 </a>
               </div>
             </div>
+
             <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
+              <!-- <div class="carousel-container"> -->
+                <!-- Sliding Bar -->
+                <div class="carousel-bar">
+                    <!-- Each segment represents a method; add labels for all 18 methods -->
+                    <label for="Swin-S-tnn" class="carousel-method-segment">Swin-S</label>
+                    <label for="Swin-T-tnn" class="carousel-method-segment">Swin-T</label>
+                    <label for="Cellpose-tnn" class="carousel-method-segment">Cellpose</label>
+                    <label for="Cascade Mask RCNN seesaw-tnn" class="carousel-method-segment">Cascade Mask RCNN seesaw</label>
+                    <label for="Centermask2-tnn" class="carousel-method-segment">Centermask2</label>
+                    <label for="SOLOv2-tnn" class="carousel-method-segment">SOLOv2</label>
+                    <label for="ResNeSt-tnn" class="carousel-method-segment">ResNeSt</label>
+                    <label for="Res2Net-tnn" class="carousel-method-segment">Res2Net</label>
+                    <label for="RF-Next-tnn" class="carousel-method-segment">RF-Next</label>
+                    <label for="StarDist-tnn" class="carousel-method-segment">StarDist</label>
+                    <label for="HRNet-tnn" class="carousel-method-segment">HRNet</label>
+                    <label for="Mask2former-tnn" class="carousel-method-segment">Mask2former</label>
+                    <label for="Mask RCNN-tnn" class="carousel-method-segment">Mask RCNN</label>
+                    <label for="Segment Anything-tnn" class="carousel-method-segment">Segment Anything</label>
+                    <label for="RetinaMask-tnn" class="carousel-method-segment">RetinaMask</label>
+                    <label for="Mesmer-tnn" class="carousel-method-segment">Mesmer</label>
+                    <label for="MS RCNN-tnn" class="carousel-method-segment">MS RCNN</label>
+                    <label for="FeatureNet-tnn" class="carousel-method-segment">FeatureNet</label>
+                    <!-- Add more labels for Method 2 to Method 18 -->
+                </div>
+            
+                <!-- Images Section -->
+                <div class="carousel-images">
+                  <img src="./images/swin-s-tnn-image.png" id="selected-image-tnn" alt="Selected Method Image">
+                  <a href="#" id="download-link-tnn" class="download-icon" download>
+                      <img src="./images/download-icon.png" class="work__code" alt="Download">
+                  </a>
+                </div>
             </div>
           </div>
 
@@ -168,12 +196,6 @@
               <p>
                 Data: dual-channel, Label: whole-cell
               </p>
-              <!-- <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul> -->
 
               <div class="work__links">
                 <a href="https://github.com/BoomStarcuc/Cell-Segmentation-Benchmark" class="link__text">
@@ -184,9 +206,42 @@
                 </a>
               </div>
             </div>
+
             <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
+              <!-- <div class="carousel-container"> -->
+                <!-- Sliding Bar -->
+                <div class="carousel-bar">
+                    <!-- Each segment represents a method; add labels for all 18 methods -->
+                    <label for="Swin-S-tdw" class="carousel-method-segment">Swin-S</label>
+                    <label for="Swin-T-tdw" class="carousel-method-segment">Swin-T</label>
+                    <label for="Cellpose-tdw" class="carousel-method-segment">Cellpose</label>
+                    <label for="Cascade Mask RCNN seesaw-tdw" class="carousel-method-segment">Cascade Mask RCNN seesaw</label>
+                    <label for="Centermask2-tdw" class="carousel-method-segment">Centermask2</label>
+                    <label for="SOLOv2-tdw" class="carousel-method-segment">SOLOv2</label>
+                    <label for="ResNeSt-tdw" class="carousel-method-segment">ResNeSt</label>
+                    <label for="Res2Net-tdw" class="carousel-method-segment">Res2Net</label>
+                    <label for="RF-Next-tdw" class="carousel-method-segment">RF-Next</label>
+                    <label for="StarDist-tdw" class="carousel-method-segment">StarDist</label>
+                    <label for="HRNet-tdw" class="carousel-method-segment">HRNet</label>
+                    <label for="Mask2former-tdw" class="carousel-method-segment">Mask2former</label>
+                    <label for="Mask RCNN-tdw" class="carousel-method-segment">Mask RCNN</label>
+                    <label for="Segment Anything-tdw" class="carousel-method-segment">Segment Anything</label>
+                    <label for="RetinaMask-tdw" class="carousel-method-segment">RetinaMask</label>
+                    <label for="Mesmer-tdw" class="carousel-method-segment">Mesmer</label>
+                    <label for="MS RCNN-tdw" class="carousel-method-segment">MS RCNN</label>
+                    <label for="FeatureNet-tdw" class="carousel-method-segment">FeatureNet</label>
+                    <!-- Add more labels for Method 2 to Method 18 -->
+                </div>
+            
+                <!-- Images Section -->
+                <div class="carousel-images">
+                  <img src="./images/swin-s-tdw-image.png" id="selected-image-tdw" alt="Selected Method Image">
+                  <a href="#" id="download-link-tdw" class="download-icon" download>
+                      <img src="./images/download-icon.png" class="work__code" alt="Download">
+                  </a>
+                </div>
             </div>
+
           </div>
 
           <div class="work__box">
@@ -195,12 +250,6 @@
               <p>
                 Data: whole-cell, Label: whole-cell
               </p>
-              <!-- <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul> -->
 
               <div class="work__links">
                 <a href="https://github.com/BoomStarcuc/Cell-Segmentation-Benchmark" class="link__text">
@@ -211,9 +260,42 @@
                 </a>
               </div>
             </div>
+
             <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
+              <!-- <div class="carousel-container"> -->
+                <!-- Sliding Bar -->
+                <div class="carousel-bar">
+                    <!-- Each segment represents a method; add labels for all 18 methods -->
+                    <label for="Swin-S-tww" class="carousel-method-segment">Swin-S</label>
+                    <label for="Swin-T-tww" class="carousel-method-segment">Swin-T</label>
+                    <label for="Cellpose-tww" class="carousel-method-segment">Cellpose</label>
+                    <label for="Cascade Mask RCNN seesaw-tww" class="carousel-method-segment">Cascade Mask RCNN seesaw</label>
+                    <label for="Centermask2-tww" class="carousel-method-segment">Centermask2</label>
+                    <label for="SOLOv2-tww" class="carousel-method-segment">SOLOv2</label>
+                    <label for="ResNeSt-tww" class="carousel-method-segment">ResNeSt</label>
+                    <label for="Res2Net-tww" class="carousel-method-segment">Res2Net</label>
+                    <label for="RF-Next-tww" class="carousel-method-segment">RF-Next</label>
+                    <label for="StarDist-tww" class="carousel-method-segment">StarDist</label>
+                    <label for="HRNet-tww" class="carousel-method-segment">HRNet</label>
+                    <label for="Mask2former-tww" class="carousel-method-segment">Mask2former</label>
+                    <label for="Mask RCNN-tww" class="carousel-method-segment">Mask RCNN</label>
+                    <label for="Segment Anything-tww" class="carousel-method-segment">Segment Anything</label>
+                    <label for="RetinaMask-tww" class="carousel-method-segment">RetinaMask</label>
+                    <label for="Mesmer-tww" class="carousel-method-segment">Mesmer</label>
+                    <label for="MS RCNN-tww" class="carousel-method-segment">MS RCNN</label>
+                    <label for="FeatureNet-tww" class="carousel-method-segment">FeatureNet</label>
+                    <!-- Add more labels for Method 2 to Method 18 -->
+                </div>
+            
+                <!-- Images Section -->
+                <div class="carousel-images">
+                  <img src="./images/swin-s-tww-image.png" id="selected-image-tww" alt="Selected Method Image">
+                  <a href="#" id="download-link-tww" class="download-icon" download>
+                      <img src="./images/download-icon.png" class="work__code" alt="Download">
+                  </a>
+                </div>
             </div>
+
           </div>
 
           <div class="work__box">
@@ -222,12 +304,6 @@
               <p>
                 Data: nucleus, Label: nucleus
               </p>
-              <!-- <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul> -->
 
               <div class="work__links">
                 <a href="https://github.com/BoomStarcuc/Cell-Segmentation-Benchmark" class="link__text">
@@ -238,57 +314,301 @@
                 </a>
               </div>
             </div>
+
             <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
+              <!-- <div class="carousel-container"> -->
+                <!-- Sliding Bar -->
+                <div class="carousel-bar">
+                    <!-- Each segment represents a method; add labels for all 18 methods -->
+                    <label for="Swin-S-lnn" class="carousel-method-segment">Swin-S</label>
+                    <label for="Swin-T-lnn" class="carousel-method-segment">Swin-T</label>
+                    <label for="Cellpose-lnn" class="carousel-method-segment">Cellpose</label>
+                    <label for="Cascade Mask RCNN seesaw-lnn" class="carousel-method-segment">Cascade Mask RCNN seesaw</label>
+                    <label for="Centermask2-lnn" class="carousel-method-segment">Centermask2</label>
+                    <label for="SOLOv2-lnn" class="carousel-method-segment">SOLOv2</label>
+                    <label for="ResNeSt-lnn" class="carousel-method-segment">ResNeSt</label>
+                    <label for="Res2Net-lnn" class="carousel-method-segment">Res2Net</label>
+                    <label for="RF-Next-lnn" class="carousel-method-segment">RF-Next</label>
+                    <label for="StarDist-lnn" class="carousel-method-segment">StarDist</label>
+                    <label for="HRNet-lnn" class="carousel-method-segment">HRNet</label>
+                    <label for="Mask2former-lnn" class="carousel-method-segment">Mask2former</label>
+                    <label for="Mask RCNN-lnn" class="carousel-method-segment">Mask RCNN</label>
+                    <label for="Segment Anything-lnn" class="carousel-method-segment">Segment Anything</label>
+                    <label for="RetinaMask-lnn" class="carousel-method-segment">RetinaMask</label>
+                    <label for="Mesmer-lnn" class="carousel-method-segment">Mesmer</label>
+                    <label for="MS RCNN-lnn" class="carousel-method-segment">MS RCNN</label>
+                    <label for="FeatureNet-lnn" class="carousel-method-segment">FeatureNet</label>
+                    <!-- Add more labels for Method 2 to Method 18 -->
+                </div>
+            
+                <!-- Images Section -->
+                <div class="carousel-images">
+                  <img src="./images/swin-s-lnn-image.png" id="selected-image-lnn" alt="Selected Method Image">
+                  <a href="#" id="download-link-lnn" class="download-icon" download>
+                      <img src="./images/download-icon.png" class="work__code" alt="Download">
+                  </a>
+                </div>
             </div>
+
           </div>
+
         </div>
       </div>
     </section>
 
     <!-- ***** Clients ***** -->
 
-    <section class="client" id="clients">
+    <section class="trained on single type" id="trained on single type">
       <div class="row">
-        <h2>Clients</h2>
-        <div class="client__logos">
-          <!-- Add logos of the clients or companies you'have worked with. -->
-          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
-          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
-          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
-          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
-          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
-          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
+        <h2>Trained on Single Type</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>TissueNet</h3>
+              <p>
+                Data: dual-channel, Label: nucleus
+              </p>
+              <p>
+                Method: Swin-S
+              </p>
+
+              <div class="work__links">
+                <a href="https://github.com/BoomStarcuc/Cell-Segmentation-Benchmark" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/BoomStarcuc/Cell-Segmentation-Benchmark" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+
+            <div class="work__image-box">
+              <!-- <div class="carousel-container"> -->
+                <!-- Sliding Bar -->
+                <div class="carousel-bar">
+                    <!-- Each segment represents a method; add labels for all 18 methods -->
+                    <label for="Breast-SwinS-ttdn" class="carousel-method-segment">Breast</label>
+                    <label for="Pancreas-SwinS-ttdn" class="carousel-method-segment">Pancreas</label>
+                    <label for="Lymph Node-SwinS-ttdn" class="carousel-method-segment">Lymph Node</label>
+                    <label for="Colon-SwinS-ttdn" class="carousel-method-segment">Colon</label>
+                    <label for="Epidermis-SwinS-ttdn" class="carousel-method-segment">Epidermis</label>
+                    <label for="Esophagus-SwinS-ttdn" class="carousel-method-segment">Esophagus</label>
+                    <label for="Lymph Node Metastasis-SwinS-ttdn" class="carousel-method-segment">Lymph Node Metastasis</label>
+                    <label for="Tonsil-SwinS-ttdn" class="carousel-method-segment">Tonsil</label>
+                    <label for="Lung-SwinS-ttdn" class="carousel-method-segment">Lung</label>
+                    <label for="Spleen-SwinS-ttdn" class="carousel-method-segment">Spleen</label>
+                    <!-- Add more labels for Method 2 to Method 18 -->
+                </div>
+            
+                <div class="carousel-images">
+                  <img src="./images/breast-swins-ttdn-image.png" id="selected-image-ttdn" alt="Selected Method Image">
+                  <!-- <div style="text-align: center; font-size: smaller;">Download</div> -->
+                  <a href="#" id="download-link-ttdn" class="download-icon" download>
+                      <img src="./images/download-icon.png" class="work__code" alt="Download">
+                  </a>
+                </div>
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>TissueNet</h3>
+              <p>
+                Data: nucleus, Label: nucleus
+              </p>
+              <p>
+                Method: Swin-S
+              </p>
+
+              <div class="work__links">
+                <a href="https://github.com/BoomStarcuc/Cell-Segmentation-Benchmark" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/BoomStarcuc/Cell-Segmentation-Benchmark">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+
+            <div class="work__image-box">
+              <!-- <div class="carousel-container"> -->
+                <!-- Sliding Bar -->
+                <div class="carousel-bar">
+                    <!-- Each segment represents a method; add labels for all 18 methods -->
+                    <label for="Colon-SwinS-ttnn" class="carousel-method-segment">Colon</label>
+                    <label for="Lymph Node-SwinS-ttnn" class="carousel-method-segment">Lymph Node</label>
+                    <label for="Breast-SwinS-ttnn" class="carousel-method-segment">Breast</label>
+                    <label for="Pancreas-SwinS-ttnn" class="carousel-method-segment">Pancreas</label>
+                    <label for="Esophagus-SwinS-ttnn" class="carousel-method-segment">Esophagus</label>
+                    <label for="Epidermis-SwinS-ttnn" class="carousel-method-segment">Epidermis</label>
+                    <label for="Tonsil-SwinS-ttnn" class="carousel-method-segment">Tonsil</label>
+                    <label for="Lymph Node Metastasis-SwinS-ttnn" class="carousel-method-segment">Lymph Node Metastasis</label>
+                    <label for="Lung-SwinS-ttnn" class="carousel-method-segment">Lung</label>
+                    <label for="Spleen-SwinS-ttnn" class="carousel-method-segment">Spleen</label>
+                    <!-- Add more labels for Method 2 to Method 18 -->
+                </div>
+            
+                <!-- Images Section -->
+                <div class="carousel-images">
+                  <img src="./images/colon-swins-ttnn-image.png" id="selected-image-ttnn" alt="Selected Method Image">
+                  <a href="#" id="download-link-ttnn" class="download-icon" download>
+                      <img src="./images/download-icon.png" class="work__code" alt="Download">
+                  </a>
+                </div>
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>TissueNet</h3>
+              <p>
+                Data: dual-channel, Label: whole-cell
+              </p>
+              <p>
+                Method: Swin-S
+              </p>
+
+              <div class="work__links">
+                <a href="https://github.com/BoomStarcuc/Cell-Segmentation-Benchmark" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/BoomStarcuc/Cell-Segmentation-Benchmark">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+
+            <div class="work__image-box">
+              <!-- <div class="carousel-container"> -->
+                <!-- Sliding Bar -->
+                <div class="carousel-bar">
+                    <!-- Each segment represents a method; add labels for all 18 methods -->
+                    <label for="Breast-SwinS-ttdw" class="carousel-method-segment">Breast</label>
+                    <label for="Colon-SwinS-tdw" class="carousel-method-segment">Colon</label>
+                    <label for="Pancreas-SwinS-ttdw" class="carousel-method-segment">Pancreas</label>
+                    <label for="Lymph Node-SwinS-ttdw" class="carousel-method-segment">Lymph Node</label>
+                    <label for="Esophagus-SwinS-ttdw" class="carousel-method-segment">Esophagus</label>
+                    <label for="Epidermis-SwinS-ttdw" class="carousel-method-segment">Epidermis</label>
+                    <label for="Tonsil-SwinS-ttdw" class="carousel-method-segment">Tonsil</label>
+                    <label for="Lymph Node Metastasis-SwinS-ttdw" class="carousel-method-segment">Lymph Node Metastasis</label>
+                    <label for="Spleen-SwinS-ttdw" class="carousel-method-segment">Spleen</label>
+                    <label for="Lung-SwinS-ttdw" class="carousel-method-segment">Lung</label>
+                    <!-- Add more labels for Method 2 to Method 18 -->
+                </div>
+            
+                <!-- Images Section -->
+                <div class="carousel-images">
+                  <img src="./images/breast-swins-tdw-image.png" id="selected-image-ttdw" alt="Selected Method Image">
+                  <a href="#" id="download-link-ttdw" class="download-icon" download>
+                      <img src="./images/download-icon.png" class="work__code" alt="Download">
+                  </a>
+                </div>
+            </div>
+
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>TissueNet</h3>
+              <p>
+                Data: whole-cell, Label: whole-cell
+              </p>
+              <p>
+                Method: Swin-S
+              </p>
+
+              <div class="work__links">
+                <a href="https://github.com/BoomStarcuc/Cell-Segmentation-Benchmark" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/BoomStarcuc/Cell-Segmentation-Benchmark">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+
+            <div class="work__image-box">
+              <!-- <div class="carousel-container"> -->
+                <!-- Sliding Bar -->
+                <div class="carousel-bar">
+                    <!-- Each segment represents a method; add labels for all 18 methods -->
+                    <label for="Esophagus-SwinS-ttww" class="carousel-method-segment">Esophagus</label>
+                    <label for="Breast-SwinS-ttww" class="carousel-method-segment">Breast</label>
+                    <label for="Epidermis-SwinS-ttww" class="carousel-method-segment">Epidermis</label>
+                    <label for="Lymph Node-SwinS-ttww" class="carousel-method-segment">Lymph Node</label>
+                    <label for="Colon-SwinS-ttww" class="carousel-method-segment">Colon</label>
+                    <label for="Tonsil-SwinS-ttww" class="carousel-method-segment">Tonsil</label>
+                    <label for="Pancreas-SwinS-ttww" class="carousel-method-segment">Pancreas</label>
+                    <label for="Lymph Node Metastasis-SwinS-ttww" class="carousel-method-segment">Lymph Node Metastasis</label>
+                    <label for="Lung-SwinS-ttww" class="carousel-method-segment">Lung</label>
+                    <label for="Spleen-SwinS-ttww" class="carousel-method-segment">Spleen</label>
+                    <!-- Add more labels for Method 2 to Method 18 -->
+                </div>
+            
+                <!-- Images Section -->
+                <div class="carousel-images">
+                  <img src="./images/esophagus-swins-ttww-image.png" id="selected-image-ttww" alt="Selected Method Image">
+                  <a href="#" id="download-link-ttww" class="download-icon" download>
+                      <img src="./images/download-icon.png" class="work__code" alt="Download">
+                  </a>
+                </div>
+            </div>
+
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>LIVECell</h3>
+              <p>
+                Data: nucleus, Label: nucleus
+              </p>
+              <p>
+                Method: Swin-S
+              </p>
+
+              <div class="work__links">
+                <a href="https://github.com/BoomStarcuc/Cell-Segmentation-Benchmark" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/BoomStarcuc/Cell-Segmentation-Benchmark">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+
+            <div class="work__image-box">
+              <!-- <div class="carousel-container"> -->
+                <!-- Sliding Bar -->
+                <div class="carousel-bar">
+                    <!-- Each segment represents a method; add labels for all 18 methods -->
+                    <label for="BT474-SwinS-ltnn" class="carousel-method-segment">BT-474</label>
+                    <label for="MCF7-SwinS-ltnn" class="carousel-method-segment">MCF7</label>
+                    <label for="A172-SwinS-ltnn" class="carousel-method-segment">A172</label>
+                    <label for="Huh7-SwinS-ltnn" class="carousel-method-segment">Huh7</label>
+                    <label for="SKOV3-SwinS-ltnn" class="carousel-method-segment">SK-OV-3</label>
+                    <label for="SkBr3-SwinS-ltnn" class="carousel-method-segment">SkBr3</label>
+                    <label for="SHSY5Y-SwinS-ltnn" class="carousel-method-segment">SH-SY5Y</label>
+                    <label for="BV2-SwinS-ttnn" class="carousel-method-segment">BV-2</label>
+                    <!-- Add more labels for Method 2 to Method 18 -->
+                </div>
+            
+                <!-- Images Section -->
+                <div class="carousel-images">
+                  <img src="./images/BT474-swins-ltnn-image.png" id="selected-image-ltnn" alt="Selected Method Image">
+                  <a href="#" id="download-link-ltnn" class="download-icon" download>
+                      <img src="./images/download-icon.png" class="work__code" alt="Download">
+                  </a>
+                </div>
+            </div>
+
+          </div>
+
         </div>
       </div>
     </section>
-
-    <!-- ***** About ***** -->
-
-    <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
-              nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
-              in vel, ex quam quidem quos mollitia labore aut sunt eius
-              ratione molestiae fuga veniam facere similique voluptate.
-            </p>
-            <!-- Provide a link to your resume -->
-            <a href="#" class="btn">My Resume</a>
-          </div>
-
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/shelley.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
 
   <!-- ***** Contact ***** -->
 
@@ -297,59 +617,17 @@
       <h2>Get in Touch</h2>
       <div class="contact__info">
         <p>
-          Are you looking for a fast-performing and user-friendly website to
-          represent your product or business? or looking for any kind of
-          consultation? or want to ask questions? or have some advice for me
-          or just want to say "Hi 👋" in any case feel free to Let me know. I
-          will do my best to respond back. 😊 The quickest way to reach out to
-          me is via an email.
+          If you have any questions, please feel free to leave a message on our GitHub issue page. I will respond as promptly as possible. Thank you for your interest in our work.
         </p>
         <!-- Replace the email with yours -->
-        <a href="mailto:you@example.com" class="btn">you@example.com</a>
+        <a href="https://github.com/BoomStarcuc/Cell-Segmentation-Benchmark" class="btn">
+          Visit Site <span>&rarr;</span>
+        </a>
       </div>
     </div>
   </section>
 
   <!-- ***** Footer ***** -->
-
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/nisarhassan12/" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile">
-            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul>
-
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-      <p>
-        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
-      </p>
-      <div class="footer__github-buttons">
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-        </iframe>
-      </div>
-    </div>
-  </footer>
 
   <a href="#top" class="back-to-top" title="Back to Top">
     <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
