@@ -3,17 +3,19 @@
 /* --------------------------------------- */
 
 .center-container {
+    /* margin: 400px auto; */
     display: flex; /* Enables flexbox */
+    flex-direction: column;
     justify-content: center; /* Horizontally centers the content */
     align-items: center; /* Vertically centers the content */
     height: 100%; /* Set to the desired height, e.g., full height of the parent */
     width: 100%; /* Set to the desired width, e.g., full width of the parent */
+    margin: 1.5rem 0 3.5rem;
+    max-width: var(--container-max-width);
+    font-family: 'Jost', sans-serif;
+    font-size: var(--font-size-medium);
+    text-align: center;
 }
-
-/* .center-container img {
-    max-width: 100%;
-    height: auto;
-} */
 
 @font-face {
     font-family: 'Hk Grotesk';
@@ -419,7 +421,7 @@ body:not(.user-is-tabbing) a:focus {
 .header {
     background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
         url('./images/header.jpg');
-    height: 100vh;
+    /* height: 100vh; */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -429,6 +431,7 @@ body:not(.user-is-tabbing) a:focus {
 .header__text {
     position: absolute;
     top: 50%;
+    /* margin: 0 auto; */
     transform: translateY(-50%);
 }
 
