@@ -1,1 +1,1 @@
-# cellseg-benchmarking
+# Seggal
