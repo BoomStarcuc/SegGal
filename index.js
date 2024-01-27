@@ -65,7 +65,7 @@ document.querySelectorAll('.work__image-box').forEach(setupCarousel);
 const downloadLinks = {
   "Swin-S-tdn": "https://drive.google.com/file/d/1KcwbXTh1y1qwnDKGP-RJy8N2E5dpRBU3/view?usp=sharing",
   "Swin-T-tdn": "https://drive.google.com/file/d/1UOzbLDfHPGDJOohqz7XS16mDRKD6hYb8/view?usp=sharing",
-  "Cellpose-tdn": "https://drive.google.com/drive/folders/1hrD134nuaNhgB33ovcSZUisWRvOJ-Bhf?usp=sharing", //need to update
+  "Cellpose-tdn": "https://drive.google.com/file/d/1bzGXXg55RWHCkCcwMNXp7EkX4ozNc4TI/view?usp=sharing", //need to update
   "Cascade Mask RCNN seesaw-tdn": "https://drive.google.com/file/d/1t9_jwJ56SO2RjOeV5e-J4UllWbpGweR3/view?usp=sharing",
   "Centermask2-tdn": "https://drive.google.com/file/d/1d7T8cd_O5kCWTOEvXhG3mm2H7stT19MB/view?usp=sharing",
   "SOLOv2-tdn": "https://drive.google.com/file/d/14W54MKOhy4gG9Bh1CCKUc-I0JUaghkg8/view?usp=sharing",
@@ -101,7 +101,7 @@ const downloadLinks = {
   "FeatureNet-tnn": "https://drive.google.com/drive/folders/1z-1umIWW7qEpkIw8X6koDxzHaBDfxPuV?usp=sharing",
   "Swin-S-tdw": "https://drive.google.com/file/d/1Vnq58-0zGixrwx18tSdxhPcvoM9IMKEr/view?usp=sharing",
   "Swin-T-tdw": "https://drive.google.com/file/d/1_VtJTwBKRWG91VaqSKLOOIoHMZn1ZKez/view?usp=sharing",
-  "Cellpose-tdw": "https://drive.google.com/drive/folders/16hXHTHQEaduFxHAvCgtQbMHrx2wEWNek?usp=sharing",
+  "Cellpose-tdw": "https://drive.google.com/file/d/1ju80k_xXwz_CDv4fGgMwzahxik7jHaSc/view?usp=sharing",
   "Cascade Mask RCNN seesaw-tdw": "https://drive.google.com/file/d/1BzUv9B7gm9gvQh6aSfTr4x6kiDosYHHf/view?usp=sharing",
   "Centermask2-tdw": "https://drive.google.com/file/d/1n2SNsEBljuvum5nTag3c-4PIfM8WVsId/view?usp=sharing",
   "SOLOv2-tdw": "https://drive.google.com/file/d/1f1Y-tCOH2bv2evEq1nsGI_5vv_vYp11T/view?usp=sharing",
