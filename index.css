@@ -635,43 +635,221 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- carousel-radio ----- */
 /* --------------------------------------- */
 
-.carousel-bar {
+/* .carousel-bar {
     display: flex;
     overflow-x: auto;
     white-space: nowrap;
-    background-color: #ff3258; /* Pink with transparency */
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
+    background-color: #ff3258; 
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
 }
 
 .carousel-bar::-webkit-scrollbar {
-    display: none;  /* Safari and Chrome */
+    display: none;  
 }
 
 .carousel-method-segment {
-    flex: 1 0 auto; /* Allows segments to grow and shrink */
+    flex: 1 0 auto; 
     cursor: pointer;
     background-color: transparent;
     text-align: center;
-    padding: 10px; /* Add padding for spacing */
-    box-sizing: border-box; /* Ensures padding is included in width calculation */
+    padding: 10px; 
+    box-sizing: border-box;
     border-right: 1px solid var(--pink);
 }
 
 .carousel-images {
-    position: relative; /* Ensures the download icon is positioned relative to the image */
+    position: relative; 
 }
 
 .download-icon {
     position: absolute;
-    top: 10px; /* Adjust as needed */
-    right: 10px; /* Adjust as needed */
-    z-index: 10; /* Ensures the icon is above the image */
+    top: 10px; 
+    right: 10px; 
+    z-index: 10; 
 }
 
 .download-icon img {
-    width: 60px; /* Adjust the size as needed */
+    width: 60px;
     height: auto;
+}
+
+element.style {
+
+}
+
+.quick-starts .title-block {
+    margin: 0.0625rem;
+    height: 2.5rem;
+    border: 2px solid #f3f4f7;
+    font-size: 1rem;
+    color: #6c6c6d;
+    line-height: 1.25rem;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 768px){
+    .col-md-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+} */
+
+
+/* quick start */
+
+.quickstart-container {
+    margin: 1px;
+    overflow-x: hidden;
+}
+
+.quickstart-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.quickstart-col {
+    display: flex;
+    flex-direction: column;
+}
+.quickstart-headings {
+    min-width: 20%;
+}
+.quickstart-options {
+    max-width: 1000px;
+}
+
+.quickstart-title-block {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.quickstart-options .option-row {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.quickstart-options .option-block {
+    background-color: #f2f2f2;
+    color: gray;
+    padding: 10px;
+    flex: 1; 
+    text-align: left;
+}
+.option-block:not(:last-child) {
+    margin-right: 10px;
+}
+
+.quickstart-options .option-block.selected {
+    background-color: #ff3258;
+    color: white;
+}
+
+.quickstart-options .option-block.half-width {
+    flex: 0.5;
+}
+
+.carousel-container {
+    overflow-x: auto;
+    display: flex;
+    scrollbar-width: none;
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-slide {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.carousel-label {
+    flex: 0 0 auto;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    color: gray;
+    padding: 10px;
+    text-align: center;
+}
+
+.carousel-label:not(:last-child) {
+    margin-right: 10px;
+}
+
+.carousel-label.selected {
+    background-color: #ff3258;
+    color: white;
+}
+
+.quickstart-options .command-row {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+    color: gray;
+    /* width: 100%; */
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.quickstart-options .command-row pre {
+    color: gray;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+
+.option-block.disabled {
+    pointer-events: none; /* 禁用鼠标事件 */
+    opacity: 0.5; /* 半透明表示不可选 */
+    /* 其他样式，如背景色等 */
+}
+
+
+.link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 90%;
+    /* flex-grow: 1; */
+    overflow: hidden; /* 隐藏溢出文本 */
+}
+
+.link-container pre {
+    white-space: nowrap; /* 保持文本在一行 */
+    overflow: hidden; /* 隐藏超出部分的文本 */
+    text-overflow: ellipsis; /* 显示省略符号来表示文本被截断 */
+    /* max-width: 700px; */
+}
+
+.copy-btn {
+    padding: 5px 10px;
+    background-color: #ff3258; /* 按钮背景色 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    /* 将按钮推到最右边 */
+    /* margin-left: auto;  */
+    /* 防止按钮在空间不足时缩小 */
+    /* flex-shrink: 0;  */
+}
+
+.copy-btn:hover {
+    background-color: #ff3258;
+}
+
+.numRows{
+    display: flex; flex-direction: row; justify-content: space-between; padding: 30px 50px 30px 30px
 }
 
 
