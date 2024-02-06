@@ -24,7 +24,7 @@
 
   <!-- Put your site title here -->
   <title>
-    A Systematic Evaluation of Computation Methods for Cell Segmentation
+    SegGal: a gallery of pre-trained cell segmentation models
   </title>
 
   <meta name="description">
@@ -50,19 +50,18 @@
         </ul>
       </nav>
     </div>
-    <div class="row">
+    <!-- <div class="row">
       <div class="center-container">
         <img src="./images/workflow.png" alt="workflow of cell segmentation">
         <p>The benchmarking overview for cell segmentation is conducted on two datasets, TissueNet and LIVECell, with two training strategies. TissueNet employs two input configurations due to nuclear and whole cell available while LIVECell only involves one input configuration due to only nuclear provided.</p>
       </div>
-    </div>
-    <div class="row">
+    </div> -->
+    <!-- <div class="row">
       <a href="#contact" class="btn btn--pink">Get in touch</a>
-    </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-      </div>
-    </div>
+    </div> -->
+    <!-- <div class="header__text-box row">
+      <div class="header__text"></div>
+    </div> -->
   </header>
   <main role="main">
 
@@ -70,7 +69,7 @@
 
     <section class="quickstart" id="quickstart">
       <div class="row">
-        <h2>Quick Start</h2>
+        <h2>SegGal: a gallery of pre-trained cell segmentation models</h2>
         <div class="work__boxes">
 
           <!-- Each div with the work__box class is a project. -->
@@ -83,54 +82,77 @@
                         <div class="quickstart-title-block">Image Type</div>
                         <div class="quickstart-title-block">Segmentation Type</div>
                         <div class="quickstart-title-block">Image Channel</div>
-                        <div class="quickstart-title-block">Training Strategy</div>
+                        <div class="quickstart-title-block">Training Data</div>
+                        <div class="quickstart-title-block">Order By</div>
                         <div class="quickstart-title-block">Method</div>
-                        <div class="quickstart-title-block">See GitHub:</div>
-                        <div class="quickstart-title-block">See Pre-trained Model:</div>
+                        <div class="quickstart-title-block">Usage Guide:</div>
+                        <div class="quickstart-title-block">Pre-trained Model:</div>
                     </div>
             
                     <div class="quickstart-col quickstart-options">
                         <div class="option-row clickable" data-method="Image Type">
-                            <div class="option-block selected">Fluorescence</div>
+                            <div class="option-block selected">Fluorescence Staining</div>
                             <div class="option-block">Light Microscopy</div>
                         </div>
+
                         <div class="option-row clickable" data-method="Segmentation Type">
                             <div class="option-block selected">Cell Nuclei Segmentation</div>
                             <div class="option-block">Whole Cell Segmentation</div>
                         </div>
+
                         <div class="option-row clickable" data-method="Image Channel">
                             <div class="option-block selected">Dual Channel Image</div>
                             <div class="option-block">Single Channel Image</div>
                         </div>
-                        <div class="option-row clickable" data-method="Training Strategy">
-                            <div class="option-block selected">Trained on All Types</div>
-                            <div class="option-block">Trained on Single Type</div>
+
+                        <div class="option-row clickable" data-method="Training Data">
+                          <div class="carousel-container">
+                            <div class="carousel-slide">
+                              <div class="carousel-label selected" id="All">All</div>
+                              <div class="carousel-label" id="Lymph Node Metastasis">Lymph Node Metastasis</div>
+                              <div class="carousel-label" id="Pancreas">Pancreas</div>
+                              <div class="carousel-label" id="Esophagus">Esophagus</div>
+                              <div class="carousel-label" id="Tonsil">Tonsil</div>
+                              <div class="carousel-label" id="Breast">Breast</div>
+                              <div class="carousel-label" id="Colon">Colon</div>
+                              <div class="carousel-label" id="Epidermis">Epidermis</div>
+                              <div class="carousel-label" id="Lymph Node">Lymph Node</div>
+                              <div class="carousel-label" id="Lung">Lung</div>
+                              <div class="carousel-label" id="Spleen">Spleen</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="option-row clickable" data-method="Order By">
+                          <div class="option-block selected" id="Overall">Overall</div>
+                          <div class="option-block" id="Accuracy">Accuracy</div>
+                          <div class="option-block" id="Usability">Usability</div>
+                          <div class="option-block" id="Scalability">Scalability</div>
                         </div>
                         
-
                         <div class="option-row clickable" data-method="Method">
                           <div class="carousel-container">
                               <div class="carousel-slide">
                                   <!-- Labels for the carousel go here -->
                                   <!-- Each label should have a unique ID and class "carousel-label" -->
-                                  <div class="carousel-label selected" id="Swin-S">Swin-S</div>
+                                  <div class="carousel-label selected" id="Cellpose">Cellpose</div>
                                   <div class="carousel-label" id="Swin-T">Swin-T</div>
-                                  <div class="carousel-label" id="Cellpose">Cellpose</div>
-                                  <div class="carousel-label" id="Cascade Mask RCNN seesaw">Cascade Mask RCNN seesaw</div>
-                                  <div class="carousel-label" id="Centermask2">Centermask2</div>
-                                  <div class="carousel-label" id="SOLOv2">SOLOv2</div>
-                                  <div class="carousel-label" id="ResNeSt">ResNeSt</div>
-                                  <div class="carousel-label" id="Res2Net">Res2Net</div>
-                                  <div class="carousel-label" id="RF-Next">RF-Next</div>
-                                  <div class="carousel-label" id="StarDist">StarDist</div>
-                                  <div class="carousel-label" id="HRNet">HRNet</div>
-                                  <div class="carousel-label" id="Mask2former">Mask2former</div>
-                                  <div class="carousel-label" id="Mask RCNN">Mask RCNN</div>
+                                  <div class="carousel-label" id="Swin-S">Swin-S</div>
                                   <div class="carousel-label" id="Segment Anything">Segment Anything</div>
-                                  <div class="carousel-label" id="RetinaMask">RetinaMask</div>
+                                  <div class="carousel-label" id="RF-Next">RF-Next</div>
+                                  <div class="carousel-label" id="SOLOv2">SOLOv2</div>
+                                  <div class="carousel-label" id="HRNet">HRNet</div>
+                                  <div class="carousel-label" id="Cascade Mask RCNN seesaw">Cascade Mask RCNN seesaw</div>
+                                  <div class="carousel-label" id="Res2Net">Res2Net</div>
+                                  <div class="carousel-label" id="StarDist">StarDist</div>
+                                  <div class="carousel-label" id="Centermask2">Centermask2</div>
                                   <div class="carousel-label" id="Mesmer">Mesmer</div>
-                                  <div class="carousel-label" id="MS RCNN">MS RCNN</div>
+                                  <div class="carousel-label" id="ResNeSt">ResNeSt</div>
+                                  <div class="carousel-label" id="Mask RCNN">Mask RCNN</div>
                                   <div class="carousel-label" id="FeatureNet">FeatureNet</div>
+                                  <div class="carousel-label" id="MS RCNN">MS RCNN</div>
+                                  <div class="carousel-label" id="Mask2former">Mask2former</div>
+                                  <div class="carousel-label" id="RetinaMask">RetinaMask</div>
                               </div>
                           </div>
                         </div>
@@ -139,14 +161,21 @@
                           <div class="link-container">
                               <pre>https://github.com/BoomStarcuc/Cell-Segmentation-Benchmark/tree/master/mmdet_BM#swin-s</pre>
                           </div>
-                          <button class="copy-btn" data-clipboard-target="github-link">Copy Link</button>
+                          <div>
+                            <button class="copy-btn" data-clipboard-target="github-link">Copy Link</button>
+                            <button href="https://github.com/BoomStarcuc/Cell-Segmentation-Benchmark/tree/master/mmdet_BM#swin-s" class="visit-btn">Visit Site</button>
+                          </div>
                         </div>
                       
                         <div class="command-row">
                           <div class="link-container">
                               <pre>https://drive.google.com/file/d/1KcwbXTh1y1qwnDKGP-RJy8N2E5dpRBU3/view?usp=sharing</pre>
                           </div>
-                          <button class="copy-btn" data-clipboard-target="model-link">Copy Link</button>
+                          <div>
+                            <button class="copy-btn" data-clipboard-target="model-link">Copy Link</button>
+                            <button href="https://drive.google.com/file/d/1KcwbXTh1y1qwnDKGP-RJy8N2E5dpRBU3/view?usp=sharing" class="visit-btn">Visit Site</button>
+                          </div>
+                          
                         </div>
 
                     </div>
