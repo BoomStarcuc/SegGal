@@ -436,18 +436,6 @@ function updateCommandRows() {
     commandRows[0].textContent = githubLink;
     commandRows[1].textContent = modelLink;
   }
-
-  var visitbuttons = document.querySelectorAll('.visit-btn');
-  visitbuttons[0].addEventListener('click', function () {
-    console.log("githubLink:", githubLink)
-    window.open(githubLink)
-  });
-
-  visitbuttons[1].addEventListener('click', function () {
-    console.log("modelLink:", modelLink)
-    window.open(modelLink)
-  });
-
 }
 
 function rankmethod() {
@@ -663,6 +651,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
       }, function (err) {
         console.error('Async: Could not copy text: ', err);
       });
+    });
+  });
+  document.querySelectorAll('.visit-btn').forEach(button => {
+    button.addEventListener('click', function () {
+      // 根据按钮获取对应的pre标签内容
+      var content = this.parentNode.previousElementSibling.textContent;
+      // 打开新页面
+      window.open(content)
     });
   });
 });

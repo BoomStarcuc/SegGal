@@ -769,12 +769,11 @@ element.style {
 .carousel-slide {
     display: flex;
     flex-wrap: nowrap;
-    min-width: 100%; /* 确保至少和父容器一样宽 */
+    min-width: 1000px;
 }
 
 .carousel-label {
-    flex: 0 0 auto;
-    /* flex: 1; */
+    flex: 1 0 auto;
     cursor: pointer;
     background-color: #f2f2f2;
     color: gray;
