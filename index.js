@@ -413,14 +413,14 @@ function updateCommandRows() {
   // rankmethod(selectedValues)
 
   // 假定您有逻辑来决定基于选中的选项返回哪个命令和链接
-  var githubLink = downloadLinks[selectedValues[0]][selectedValues[1]][selectedValues[2]][selectedValues[3]][selectedValues[5]]['GitHub']; // 根据选择更新这个链接
-  var modelLink = downloadLinks[selectedValues[0]][selectedValues[1]][selectedValues[2]][selectedValues[3]][selectedValues[5]]['Pre-trained model']; // 根据选择更新这个链接
-  var Usability = downloadLinks[selectedValues[0]][selectedValues[1]][selectedValues[2]][selectedValues[3]][selectedValues[5]]['Usability'];
-  var Scalability = downloadLinks[selectedValues[0]][selectedValues[1]][selectedValues[2]][selectedValues[3]][selectedValues[5]]['Scalability'];
-  var accuracy = downloadLinks[selectedValues[0]][selectedValues[1]][selectedValues[2]][selectedValues[3]][selectedValues[5]]['Accuracy'];
+  let githubLink = downloadLinks[selectedValues[0]][selectedValues[1]][selectedValues[2]][selectedValues[3]][selectedValues[5]]['GitHub']; // 根据选择更新这个链接
+  let modelLink = downloadLinks[selectedValues[0]][selectedValues[1]][selectedValues[2]][selectedValues[3]][selectedValues[5]]['Pre-trained model']; // 根据选择更新这个链接
+  let Usability = downloadLinks[selectedValues[0]][selectedValues[1]][selectedValues[2]][selectedValues[3]][selectedValues[5]]['Usability'];
+  let Scalability = downloadLinks[selectedValues[0]][selectedValues[1]][selectedValues[2]][selectedValues[3]][selectedValues[5]]['Scalability'];
+  let accuracy = downloadLinks[selectedValues[0]][selectedValues[1]][selectedValues[2]][selectedValues[3]][selectedValues[5]]['Accuracy'];
 
-  var numRows = document.getElementsByClassName('numRows')[0];
-  var numLines = numRows.getElementsByTagName('input')
+  let numRows = document.getElementsByClassName('numRows')[0];
+  let numLines = numRows.getElementsByTagName('input')
   numLines[0].value = accuracy
   numLines[1].value = Usability
 
@@ -438,13 +438,13 @@ function updateCommandRows() {
   }
 
   var visitbuttons = document.querySelectorAll('.visit-btn');
-  // console.log('Selected block:', block);
-
   visitbuttons[0].addEventListener('click', function () {
+    console.log("githubLink:", githubLink)
     window.open(githubLink)
   });
 
   visitbuttons[1].addEventListener('click', function () {
+    console.log("modelLink:", modelLink)
     window.open(modelLink)
   });
 
